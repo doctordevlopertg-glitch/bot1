@@ -134,7 +134,7 @@ keyboard = InlineKeyboardMarkup(
 
 # Image URLs for the random image feature
 image_urls = [
-    "https://files.catbox.moe/k3qs5r.jpg",
+    "https://i.ibb.co/kgLcJZkL/x.jpg",
     # Add more image URLs as needed
 ]
 random_image_url = random.choice(image_urls)
@@ -297,7 +297,7 @@ async def edit_txt(client, message: Message):
         try:
             await message.reply_document(
                 document=final_file_path,
-                caption="📥**𝗘𝗱𝗶𝘁𝗲𝗱 𝗕𝘆 ➤ 𝗔𝗗𝗜𝗧𝗬𝗔⚡️**"
+                caption="ROBINHOOD"
             )
         except Exception as e:
             await message.reply_text(f"🚨 **Error**: Unable to send the file.\n\nDetails: {e}")
@@ -385,7 +385,7 @@ async def ytplaylist_to_txt(client: Client, message: Message):
         file_name = save_to_file(videos, title)
         await message.reply_document(
             document=file_name,
-            caption=f"`{title}`\n\n📥 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤ 𝗔𝗗𝗜𝗧𝗬𝗔⚡️"
+            caption=f"`{title}`\n\n📥 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ROBINHOOD⚡️"
         )
         os.remove(file_name)
     else:
@@ -509,9 +509,9 @@ async def upload(bot: Client, m: Message):
     raw_text3 = input3.text
     await input3.delete(True)
     # Default credit message with link
-    credit = "️[Aditya⚡️️](https://t.me/Maisamyahu)"
+    credit = "️[ROBINHOOD⚡](https://t.me/ROBINHOOD_ID)"
     if raw_text3 == '1':
-        CR = '[Aditya⚡️️](https://t.me/Maisamyahu)'
+        CR = '[ROBINHOOD](https://t.me/https://t.me/ROBINHOOD_ID)'
     elif raw_text3:
         try:
             text, link = raw_text3.split(',')
